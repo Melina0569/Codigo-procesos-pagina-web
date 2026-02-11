@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #F39EB6;
+    --secondary-color: #B8DB80;
+    --surface-color: #F7F6D3;
+    --background-color: #a9d5f1;
+    --gris-oscuro: #474da0;
+
+}
+
+*{/*Para todos los elementos*/
+    margin: 0;
+    box-sizing: border-box; /*Incluye el padding y el borde dentro del ancho y alto total del elemento*/
+}
+
+body{/*Regla de estilos para la etiqueta body*/
+    font-family: Urbanist, Arial, sans-serif;
+}
+p{
+    margin-bottom: 1em; /*Espacio inferior de los párrafos*/
+}
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0.5em;/*em es una unidad de medida relativa al tamaño de la fuente*/
+}
+
+h1{
+    font-size: 72px;
+    font-weight: 200; /*Grosor o estilo de la fuente*/
+    letter-spacing: -2px; /*Espacio entre letras*/
+    margin-bottom: 0; /*Quitar el margen inferior*/
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-transform: lowercase;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+img{
+    display: block;
+}
+
+figure{
+    margin-bottom: 1rem; /*Espacio inferior de las figuras*/
+}
+
+a{
+    color: var(--gris-oscuro); /*Color de los enlaces*/
+    text-decoration: none; /*Quitar el subrayado de los enlaces*/
+}
+a:hover{
+    color: var(--secondary-color); /*Color de los enlaces al pasar el cursor sobre ellos*/
+}
+
+#main-header p{
+    margin-bottom: 0; /*Quitar el margen inferior del párrafo dentro de #main-header*/
+}
+#logo{
+    max-width: 200px;
+}
+#main-banner {
+    margin-bottom: 0; /*Quitar el margen inferior del banner principal*/
+}
+#informacion{ /*Regla de estilos para una etiqueta con id empieza con #*/
+    background-color: var(--primary-color); /* Color de fondo */
+    color: white;
+}
+#informacion a{
+    color: #e0cd1f; 
+}
+#informacion a:hover{
+    color: var(--gris-oscuro);
+    text-decoration: none;
+}
+
+#anuncio{
+    background-image: url("../images/imagen.jpg");
+    color: black;
+    background-size: cover; /*la imagen de fondo cubre todo el contenedor*/;
+    background-position: center;;
+}
+#oficina{
+    background-color: var(--surface-color);
+    color: black;
+}
+#oficina figure{
+    margin-bottom: 0;
+}
+#historia{
+    background-color: var(--secondary-color); /* Color de fondo */
+}
+#aviso{
+    background-image: url("../images/imageuni.jpg");
+    background-size: cover;
+    text-align: right;
+    background-attachment: fixed; /*La imagen de fondo se mantiene fija al hacer scroll*/
+}
+
+#aviso .texto-importante{
+    color: var(--secondary-color);
+}
+
+#funcion{
+    background-color: var(--background-color);
+    color: black;
+}
+
+#main-footer{
+    background-color: var(--gris-oscuro);
+    color: white;
+    padding: 45px 0; /*Espaciado interno superior e inferior*/
+}
+
+.container{
+    max-width: 1200px; /*Ancho máximo del contenedor*/
+    margin-left: auto;
+    margin-right: auto; /*Centrar el contenedor*/
+    padding-left: 12px;
+    padding-right: 12px; /*Espaciado interno*/
+}
+
+.padded{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.row{
+    display: flex; /*Acomoda los objetos que contiene por defecto uno al costado del otro*/
+    margin-left: -12px;
+    margin-right: -12px; /*Quitar el espacio extra que se crea por el padding de las columnas*/
+}
+
+.col{
+    flex-basis: 0;
+    flex-grow: 1; /*Hace que las columnas ocupen el mismo espacio*/
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-50{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.img-fluid{
+    max-width: 100%;
+}
+.centrado-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.display-1{
+    font-size: 72px;
+    line-height: 0.9;
+    font-weight: 200;
+    letter-spacing: -2px;
+}
+
+.texto-importante{
+    font-weight: 400;
+    color: var(--background-color);
+    font-style: italic;
+
+}
